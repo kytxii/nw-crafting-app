@@ -1,0 +1,23 @@
+/* Global styles for the application */
+* {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 4px 20px;
+  border-radius: 4px;
+}
+
+.navbar a:hover {
+  background-color: #1f1f1f;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("./assets/fonts/SegoeUI-VF.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
