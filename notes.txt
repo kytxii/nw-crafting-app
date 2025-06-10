@@ -1,0 +1,1 @@
+- map prices to material amount
