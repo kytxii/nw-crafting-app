@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import logo from "../assets/images/nwc-logo.png";
 import recipes from "../assets/images/recipes.png";
 import prices from "../assets/images/prices.png";
@@ -9,7 +11,7 @@ function Header() {
       <div
         className="header-container"
         style={{
-          width: "100vw",
+          width: "100%",
           position: "fixed",
           top: "0",
           zIndex: "1000",
@@ -27,8 +29,8 @@ function Header() {
             padding: "0 50px",
           }}
         >
-          <a
-            href="/"
+          <Link
+            to="/"
             style={{
               height: "40px",
             }}
@@ -43,7 +45,7 @@ function Header() {
                 padding: "0",
               }}
             />
-          </a>
+          </Link>
           <input
             type="search"
             placeholder="Search recipes..."
@@ -57,6 +59,7 @@ function Header() {
             }}
           />
         </div>
+        {/* Recipes */}
         <div
           className="navbar"
           style={{
@@ -77,8 +80,8 @@ function Header() {
               textAlign: "center",
             }}
           >
-            <a
-              href="/"
+            <Link
+              to="/recipes"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -95,8 +98,9 @@ function Header() {
                 }}
               />
               Recipes
-            </a>
+            </Link>
           </div>
+          {/* Price Customization */}
           <div
             style={{
               display: "flex",
@@ -106,8 +110,8 @@ function Header() {
               textAlign: "center",
             }}
           >
-            <a
-              href="/"
+            <Link
+              to="/prices"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -124,8 +128,9 @@ function Header() {
                 }}
               />
               Price Customization
-            </a>
+            </Link>
           </div>
+          {/* Sales Tracker */}
           <div
             style={{
               display: "flex",
@@ -135,8 +140,8 @@ function Header() {
               textAlign: "center",
             }}
           >
-            <a
-              href="/"
+            <Link
+              to="/sales-tracker"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -153,7 +158,7 @@ function Header() {
                 }}
               />
               Sales Tracker
-            </a>
+            </Link>
           </div>
         </div>
       </div>
