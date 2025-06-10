@@ -1,26 +1,20 @@
-import AdminJS from "adminjs";
-import AdminJSExpress from "@adminjs/express";
-import AdminJSSequelize from "@adminjs/sequelize";
-import { DataTypes, Model } from "sequelize";
+import { Model } from "sequelize";
 import sequelize from "../db";
 
-// Register the Sequelize adapter with AdminJS
-AdminJS.registerAdapter(AdminJSSequelize);
-
 class Item extends Model {
-  public id!: number;
-  public name!: string;
-  public weightClass!: number;
-  public bindOnPickup!: boolean;
-  public ingots!: number;
-  public leather!: number;
-  public cloth!: number;
-  public planks!: number;
-  public matrixType!: string;
-  public matrixAmount!: number;
-  public scarab!: number;
-  public link!: string;
-  public imageURL!: string;
+  id!: number;
+  name!: string;
+  weightClass!: number;
+  bindOnPickup!: boolean;
+  ingots!: number;
+  leather!: number;
+  cloth!: number;
+  planks!: number;
+  matrixType!: string;
+  matrixAmount!: number;
+  scarab!: number;
+  link!: string;
+  imageURL!: string;
 }
 
 Item.init(
