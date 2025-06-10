@@ -14,6 +14,7 @@ function Footer() {
             alignItems: "center",
             gap: "20px",
             height: "100%",
+            width: "100%",
           }}
         >
           © 2025 Copyright

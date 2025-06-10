@@ -6,7 +6,7 @@ function Sidebar() {
         style={{
           marginTop: "120px",
           marginBottom: "10px",
-          marginLeft: "10%",
+          marginLeft: "50%",
           width: "350px",
           height: "100vh",
           backgroundColor: "#121212",
